@@ -5,7 +5,7 @@ console.log(res ? 'lucky' : 'unlucky');
 
 function sumDigits(num){
     let sum = 0;
-    while(num !== 0){
+    while(num){
         sum += num %10;
         num = (num - num % 10) / 10;
     }
@@ -16,8 +16,8 @@ function luckyNumber(num){
     let sum1 = 0;
     let sum2 = 0;
     let pos = 1;
-    while (num !== 0){
-        if (pos % 2 === 0){
+    while (num){
+        if (pos % 2){
             sum1 += num % 10;
         }else{
             sum2 += num % 10;
@@ -36,7 +36,7 @@ function luckyNumber(num){
 function luckyNumber1(num){
     let sum1 = 0;
     let sum2 = 0;
-    while (num !== 0){
+    while (num){
        sum1 += num % 10;
        num = (num - num % 10) / 10;
        sum2 += num % 10;
@@ -47,9 +47,9 @@ function luckyNumber1(num){
 
 function luckyNumber2(num){
     let sum = 0;
-    while (num !== 0){
+    while (num){
         sum = num % 10 - sum;
         num = (num - num % 10)/10;
     }
-    return sum === 0;
+    return !sum;
 }
