@@ -1,6 +1,6 @@
 
 
-const arr = [1, 2, 3, 'four', 'five', true];
+const arr = [1, 2, 3, 'four', 'five', true]; //not a LET!!! jast const!!
 console.log(typeof arr);
 console.log(arr[3]);
 console.log(typeof arr[3]);
@@ -19,11 +19,12 @@ console.log(arr.length);
 arr.length = 3;
 printArray(arr);
 console.log(arr);
+console.log(arr.length);
 
-function printArray(arr){
-    console.log('==========');
-    for(let i = 0; i < arr.length; i++){
+function printArray(arr) {
+    console.log('========');
+    for (let i = 0; i < arr.length; i++) {
         console.log(arr[i]);
     }
-    console.log('===========');
+    console.log('========');
 }
