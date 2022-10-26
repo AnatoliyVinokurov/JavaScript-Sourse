@@ -2,7 +2,7 @@ const person = {
     firstName: 'John',
     lastName: 'Smith',
     age: 27,
-    fullName: function(){
+    fullName: function () {
         return `${this.firstName} ${this.lastName}`
     }
 }
@@ -25,19 +25,19 @@ const peter = {
     age: 34
 }
 console.log(peter);
-peter.fullName = function(){
-    return`${this.firstName} ${this.lastName}`;
+peter.fullName = function () {
+    return `${this.firstName} ${this.lastName}`
 }
 console.log(peter.fullName());
 const mary = new Person('Mary', 'Smith', 18);
 console.log(mary);
 console.log(mary.fullName());
 
-function Person(firstName, lastName, age){
+function Person(firstName, lastName, age) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = +age;
-    this.fullName = function(){
-        return `${this.firstName} ${this.lastName}`;
+    this.fullName = function () {
+        return `${this.firstName} ${this.lastName}`
     }
 }

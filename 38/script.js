@@ -1,5 +1,9 @@
 const greeting = name => console.log(`Hello, ${name}`);
 
+
+
+
+
 const pow4 = x => pow2(x) * pow2(x);
 
 greeting('John');
@@ -12,20 +16,17 @@ const fn = greeting;
 fn('Rabindranat');
 let x = factorial(5);
 console.log(x);
-console.log('=====');
+console.log('=====uniFunction=====');
 let res = uniFunction(6, pow2, factorial);
 console.log(res);
 res = uniFunction(-3, pow2, factorial);
 console.log(res);
 res = uniFunction(3, pow2, pow4);
 console.log(res);
-res = uniFunction(10, x => x * 3, x => x / 2);
+res = uniFunction(-10, x => x * 3, x => x / 2);
 console.log(res);
-
-
-
-
 res = pow4(factorial(2));
+console.log(res);
 
 function uniFunction(x, fn1, fn2) {
     if (x < 0) {
