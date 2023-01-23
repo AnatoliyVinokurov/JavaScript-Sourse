@@ -1,1 +1,1 @@
-# WebProject
+# Javascript course
